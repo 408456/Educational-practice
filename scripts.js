@@ -36,7 +36,7 @@ function gameLoop() {
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#4caf50';
+    ctx.fillStyle = 'orange';
     snake.forEach(segment => ctx.fillRect(segment.x, segment.y, box, box));
     ctx.fillStyle = '#ff4757';
     ctx.fillRect(food.x, food.y, box, box);
