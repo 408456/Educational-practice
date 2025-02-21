@@ -3,22 +3,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000;
+    background: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
     flex-direction: column;
     text-align: center;
 }
+
 canvas {
-    border: 5px solid #fff;
+    border: 5px solid #0000ff;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 #score, #maxScore {
     font-size: 24px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
+
 button {
     background-color: #4caf50;
     color: white;
@@ -28,17 +31,29 @@ button {
     cursor: pointer;
     margin-top: 10px;
 }
+
 button:hover {
     background-color: #45a049;
 }
+
 #gameOver {
     display: none;
-    color: white;
+    color: #000;
 }
+
 #gameOver p {
     font-size: 32px;
     font-weight: bold;
 }
+
 .hidden {
     display: none;
+}
+
+.snake {
+    fill: #0000ff; /* Синий цвет змейки */
+}
+
+.food {
+    fill: #ff66b2; /* Розовый мягкий цвет еды */
 }
